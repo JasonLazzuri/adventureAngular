@@ -1,0 +1,9 @@
+<h2>StoryTime!</h2>
+
+<div *ngFor="let character of characters | async" (click)="goToStoryStart(character)" class="panel panel-default">
+  <div>
+    <h3>{{(characterToDisplay | async)?.name}}</h3>
+    <h4>{{(characterToDisplay | async)?.points}}</h4>
+  </div>
+
+</div>
